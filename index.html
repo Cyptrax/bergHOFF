@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/item.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
+    <script src="./js/punten.js " type="module"></script>
+    <script src="./js/eindscherm.js" type="module"></script>
+    <script src="./js/dampkap.js" type="module"></script>
+    <script src="./js/slaapkamer.js" type="module"></script>
+    <script src="./js/messen.js" type="module"></script>
+    <script src="./js/keukenzoom.js" type="module"></script>
+    <title>BergHOFF Game</title>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <h1 class="hidden">Berghoff game</h1>
+      <section class="opening-animation slide-out ">
+        <figure>
+          <!-- <img src="./Images/Berghoff_black.png" alt="berghoff_black logo" /> -->
+        </figure>
+      </section>
+      <section class="main-section fade-in">
+        <h2 class="hidden">keuken</h2>
+        <button class="slaapkamer-deur button"></button>
+        <div class="table">
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="fig">
+          <div>
+              <button class="button fig-1">
+                <img src="./Images/drinkfles.png" alt="drinkfles" />
+              </button>
+            
+              <button class="button fig-2">
+                <img
+                  src="./Images/plastic-water-bottle-empty-e170N24-600-removebg-preview.png"
+                  alt="platiek waterfles"
+                />
+              </button>
+          </div>
+          <div>
+              <button class="button fig-3">
+                <img src="./Images/Lunchbox.png" alt="lunchbox" />
+              </button>
+
+              <button class="button fig-4">
+                <img src="./Images/tin-foil.png" alt="tin foil" />
+              </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-keuken hidden">
+        <button class="slaapkamer-terug button">Terug naar slaap- kamer</button>
+        <button class="zoom button">Zoom in</button>
+        <button class="keuken-img-frigo button"></button>
+        <button class="keuken-img-diepvries button"></button>
+        <div class="keuken-img-micro">
+          <h2>Gerechtonderdelen</h2>
+          <ul class="itemrandomlijst">
+            <li class="item1"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+          </ul>
+        </div>
+
+        <div class="messen">
+          <button id="mes-1" class="button mes"> <img src="./Images/gebroken-mes-removebg-preview.png" alt="mes-1"> </button>
+          <button id="mes-2" class="button mes"> <img src="./Images/cartoon-slecht-mes-removebg-preview.png" alt="mes-2"> </button>
+          <button id="mes-3" class="button mes"> <img src="./Images/berghof_mes-removebg-preview.png" alt="mes-3"> </button>
+        </div>
+        
+        <div class="table-items">
+          <figure>
+            <img src="./Images/wooden-board.png" alt="houden board" />
+          </figure>
+        </div>
+        <div class="eten table-items"></div>
+        <div class="groenten"></div>
+      </section>
+
+      <section class="main-frigo hidden">
+        <div class="frigo inv">
+          <div class="inv-top">
+            <h2>Frigo</h2>
+            <div class="close-frigo">
+              <button class="close-frigo close-button"></button>
+              <figure>
+                <img src="./Images/close.png" alt="" class="close-frigo" />
+              </figure>
+            </div>
+          </div>
+          <div class="list-inv">
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></bu>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></bu>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-diepvries hidden">
+        <div class="diepvries inv">
+          <div class="inv-top">
+            <h2>Diepvries</h2>
+            <div class="close-diepvries">
+              <button class="close-diepvries close-button"></button>
+              <figure>
+                <img src="./Images/close.png" alt="" class="close-diepvries" />
+              </figure>
+            </div>
+          </div>
+          <div class="list-inv">
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+          </div>
+          <!-- <div class="frigo-item"></div>
+          <div class="frigo-item"></div>
+          <div class="frigo-item"></div>
+          <div class="frigo-item"></div>
+          <div class="frigo-item"></div>
+          <div class="frigo-item"></div>
+          <div class="frigo-item"></div>
+          <div class="frigo-item"></div>
+          <div class="frigo-item"></div> -->
+        </div>
+      </section>
+
+      <section class="main-keuken-zoom hidden">
+        <h2 class="hidden">keuken-zoom</h2>
+        <button class="keuken-zoom-img-kast button"></button>
+
+        <div class="dampkap">
+          <button class="button damp1"></button>
+          <button class="button damp2"></button>
+          <button class="button damp3"></button>
+        </div>
+
+        <div class="groeten-geschneden">
+        </div>
+
+        <button class="vuur-aan button">Vuur aansteken</button>
+
+        <button class="terug-zoom button">terug naar keuken</button>
+
+        <div class="fornuis"></div>
+
+  
+        <div class="showeten"></div>
+
+      </section>
+
+      <section class="main-kast hidden">
+        <div class="kast inv">
+          <div class="inv-top">
+            <h2>Kast</h2>
+            <div class="close-kast">
+              <button class="close-button close-kast"></button>
+              <figure>
+                <img
+                  src="./Images/close.png"
+                  alt="sluit icon"
+                  class="close-kast"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="list-inv">
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+            <button class="inv-item"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="eindscherm hidden">
+        <div class="scoreboard">
+          <div>
+            <h2>- UW SCORE -</h2>
+            <p class="eindscherm-punten"></p>
+            <h3>punten</h3>
+            <p class="totaalPunten"></p>
+            <p class="minpunten"></p>
+          </div>
+          <div class="leaderboard">
+            <div class="leaderboard">
+              <table id="leaderboardTable">
+                <tr>
+                  <th>Player Name</th>
+                  <th>Score</th>
+                  <th>Date Achieved</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-eindscherm">
+          <button class="refresh">Replay</button>
+          <button>Afrekenen</button>
+        </div>
+      </section>
+
+
+      <section class="dialog hidden">
+        <div>
+          <div>
+            <h2>Placeholder</h2>
+            <p>Placeholder</p>
+          </div>
+          <button class="next">Next</button>
+          <button class="end hidden">Eindig spel</button>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

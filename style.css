@@ -1,0 +1,998 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --bg: var(--white);
+    --primary: var(--black);
+    --yellow: #fff45f;
+    --brown-top: rgb(189, 128, 97);
+    --brow-bottom: rgb(148, 92, 55);
+    --blue-border: rgb(73, 139, 246);
+}
+
+button:focus-visible, button:focus {
+    /* box-shadow:#fff45f 1rem 1rem ; */
+    border: 2px solid red;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid black;
+    /* border: none; */
+}
+
+
+
+.button:hover {
+    box-shadow: 0 0 100px 20px #fff45f;
+}
+
+.overlay-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+}
+
+.overlay-link:focus {
+    border: #fff45f 1px solid;
+}
+
+
+img {
+    max-width: 100%;
+    aspect-ratio: 8/5;
+    object-fit: fill;
+}
+
+figure {
+    max-width: 100%;
+    aspect-ratio: 8/5;
+}
+
+body, figure {
+    margin: 0;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+
+.opening-animation img {
+    aspect-ratio: 4/1;
+    margin: 0;
+}
+
+.opening-animation {
+    min-height: 100vh;
+    background-image: url(./Images/Berghoff_black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20% 10%;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+
+}
+
+.opening-animation figure {
+    margin-block: auto;
+    display: flex;
+}
+
+.slide-out {
+    animation: slide-out 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+
+    99% {
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateZ(600px);
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+.fade-in {
+    animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 1.5s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-section {
+    min-height: 100vh;
+    background-image: url(./Images/slaap-kamer-glow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 10%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slaapkamer-deur {
+    height: 10rem;
+    width: 8rem;
+    position: absolute;
+    right: 0;
+}
+
+.table {
+    background-color: var(--brown-top);
+    min-width: 100vw;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+.table div:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--brow-bottom);
+    width: 100vw;
+    height: 50%;
+}
+
+
+.fig {
+    position: absolute;
+    /* top: 55%; */
+    bottom: 15%;
+    height: 20%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.fig>div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-inline-start: 10%;
+}
+
+
+.fig img {
+    width: 80%;
+}
+
+.fig figure {
+    width: 100%;
+    position: relative;
+}
+
+/* keuken */
+
+.main-keuken {
+    min-height: 100vh;
+    background-image: url(./Images/Keuken-img-glow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 10%;
+    background-position: center;
+    position: relative;
+}
+
+.keuken-img-frigo {
+    position: absolute;
+    right: 0;
+    height: 45%;
+    width: 20%;
+    top: 0;
+}
+
+.keuken-img-micro {
+    position: absolute;
+    left: 12%;
+    top: 18%;
+    height: 30%;
+    width: 15%;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.keuken-img-micro h2 {
+    margin: 0;
+    font-size: .8rem;
+    padding: .2rem;
+}
+
+.keuken-img-micro ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.keuken-img-diepvries {
+    position: absolute;
+    height: 25%;
+    width: 20%;
+    right: 0;
+    top: 45%;
+}
+
+.table-items {
+    height: 7rem;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+}
+
+.table-items img {
+    height: 35%;
+}
+
+
+.eten {
+    height: 7rem;
+    position: absolute;
+    left: 40%;
+    bottom: -10%;
+}
+
+.eten img {
+    width: 4.5rem;
+}
+
+.item-snijden {
+    height: 7rem;
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+}
+
+.item-schijden img {
+    height: 7rem;
+}
+
+
+.slaapkamer-terug {
+    position: absolute;
+    height: 60%;
+    width: 6%;
+}
+
+.zoom {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    height: 30%;
+    width: 40%;
+}
+
+
+/* frigo */
+
+.close-frigo {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.main-frigo {
+    min-height: 100vh;
+    background-image: url(./Images/Keuken-img-glow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 10%;
+    background-position: center;
+    position: relative;
+}
+
+.inv {
+    width: 40rem;
+    height: 16rem;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: .6rem;
+    border: 2px solid var(--blue-border);
+}
+
+.inv h2 {
+    margin: 0;
+    padding: .9rem;
+}
+
+.inv-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inv-top img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: .9rem;
+    margin-top: .7rem;
+}
+
+.inv-item {
+    height: 4.2rem;
+    width: 4.2rem;
+    background-color: rgba(128, 128, 128, 0.209);
+    border: 1px solid gray;
+    border-radius: .6rem;
+}
+
+.inv-item img {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.list-inv {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline-start: 2rem;
+    gap: 1rem;
+}
+
+.main-diepvries {
+    min-height: 100vh;
+    background-image: url(./Images/Keuken-img-glow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 10%;
+    background-position: center;
+    position: relative;
+}
+
+.close-diepvries {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.close-button {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.groenten {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    display: flex;
+}
+
+.groenten img {
+    max-width: 6rem;
+}
+
+
+.messen {
+    /* border: 1px solid var(--black); */
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    display: flex;
+}
+
+.messen button, .messen img {
+    max-width: 6rem;
+}
+
+/* #mes2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+#mes2.up {
+    transform: translateY(-1rem);
+} */
+
+/* Keuken zoom */
+
+
+.groeten-geschneden {
+    position: absolute;
+    bottom: 25%;
+    left: 57%;
+    display: flex;
+}
+
+.groeten-geschneden button, .groeten-geschneden img {
+    max-width: 4rem;
+}
+
+.fornuis {
+    position: absolute;
+    bottom: 22%;
+    left: 40%;
+    display: flex;
+}
+
+.fornuis button, .fornuis img {
+    max-width: 6rem;
+}
+
+
+.vuur-aan {
+    position: absolute;
+    bottom: 5%;
+    left: 32%;
+    width: 25%;
+    height: 15%;
+}
+
+.showeten {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 30%;
+    left: 30%;
+}
+
+.showeten img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.showetendiv {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-keuken-zoom {
+    min-height: 100vh;
+    background-image: url(./Images/keuken-zoom-kast-top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 10%;
+    background-position: center;
+    position: relative;
+}
+
+.keuken-zoom-img-kast {
+    height: 35%;
+    width: 40%;
+    position: absolute;
+    right: 0%;
+    top: 0;
+    /*background-color: yellow;*/
+}
+
+.terug-zoom {
+    position: absolute;
+    height: 60%;
+    width: 6%;
+}
+
+/* keuken zoom kast */
+
+.main-kast {
+    min-height: 100vh;
+    background-image: url(./Images/keuken-zoom-kast-top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 10%;
+    background-position: center;
+    position: relative;
+}
+
+.close-kast {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+.close-button {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* eindscherm */
+
+.eindscherm {
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(239, 240, 245, 0.959);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--black);
+    justify-content: space-around;
+    text-align: center;
+}
+
+.replay {
+    width: 20%;
+    text-align: center;
+}
+
+.buttons-eindscherm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-eindscherm button {
+    margin-top: 1rem;
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    background-color: rgb(204, 161, 132);
+    color: black;
+}
+
+
+.buttons-eindscherm button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid red;
+    transform: translateY(-50%);
+}
+
+.dampkap {
+    height: 2rem;
+    position: absolute;
+    left: 39vw;
+    top: 13vh;
+}
+
+.dampkap button {
+    height: 100%;
+    width: 2rem;
+    border-radius: 1rem;
+}
+
+/* dialog */
+
+.dialog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.dialog>div {
+    background-color: white;
+    width: 80%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 2rem;
+}
+
+.dialog>div>div {
+    height: 100%;
+    margin: 1rem;
+}
+
+.dialog h2 {
+    margin-bottom: 0;
+    margin-top: .2rem;
+}
+
+
+.dialog p {
+    margin-bottom: 0;
+}
+
+.next {
+    border: 2px solid black;
+    height: 40%;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.next:hover {
+    background-color: red;
+}
+
+
+
+@media screen and (min-width: 800px) and (min-height: 400px) {
+    .table-items {
+        bottom: 10%;
+    }
+
+    .groenten {
+        bottom: 12%;
+    }
+
+    .keuken-img-micro {
+        left: 12%;
+        top: 25%;
+        height: 18%;
+        width: 12%;
+    }
+
+    .slaapkamer-deur {
+        height: 13rem;
+        width: 8rem;
+        position: absolute;
+        right: 0;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (min-height: 550px) {
+    .table-items {
+        bottom: 17%;
+    }
+
+    .groenten {
+        bottom: 22%;
+    }
+
+    .slaapkamer-deur {
+        height: 50%;
+        width: 14%;
+    }
+
+    .keuken-img-micro {
+        left: 10%;
+        top: 30%;
+        height: 15%;
+        width: 12%;
+    }
+
+    .keuken-img-diepvries {
+        height: 20%;
+        width: 20%;
+    }
+
+    .keuken-zoom-img-kast {
+        height: 25%;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 800px) and (min-height: 650px) {
+    .table-items {
+        bottom: 20%;
+    }
+
+    .keuken-img-micro {
+        left: 3%;
+        top: 30%;
+        height: 15%;
+        width: 15%;
+    }
+
+    .keuken-img-diepvries {
+        height: 20%;
+        width: 15%;
+    }
+
+    .keuken-img-frigo {
+        width: 15%;
+    }
+
+    .slaapkamer-deur {
+        height: 21rem;
+        width: 5rem;
+    }
+
+}
+
+
+/* @media screen and (min-width: 950px) and (min-height: 650px) {
+
+    .keuken-img-micro {
+        left: 9%;
+        top: 30%;
+        height: 15%;
+        width: 15%;
+    }
+
+    .slaapkamer-deur {
+        height: 50%;
+        width: 15%;
+    }
+
+    .keuken-img-diepvries {
+        height: 20%;
+        width: 20%;
+    }
+
+    .keuken-img-frigo {
+        width: 20%;
+    }
+
+} */
+
+/* @media screen and (min-height: 650px) {
+    .slaapkamer-deur {
+        
+        width: 11rem;
+    }
+} */
+
+/* @media screen and (min-width: 1050px) and (min-height: 650px) {
+    .inv {
+        width: 50rem;
+        height: 26rem;
+    }
+
+
+    .slaapkamer-deur {
+        height: 50%;
+        width: 18%;
+    }
+
+    .inv-item {
+        height: 8rem;
+        width: 8rem;
+        background-color: rgba(128, 128, 128, 0.209);
+        border: 1px solid gray;
+        border-radius: .6rem;
+    }
+
+} */
+
+
+/* @media screen and (min-width: 1350px) and (min-height: 650px) {
+    .inv {
+        width: 70rem;
+        height: 30rem;
+    }
+
+    .groenten {
+        bottom: 15%;
+    }
+
+    .groenten img {
+        max-width: 10rem;
+    }
+
+    .slaapkamer-deur {
+        height: 50%;
+        width: 17%;
+    }
+
+    .inv-item {
+        height: 10rem;
+        width: 10rem;
+        background-color: rgba(128, 128, 128, 0.209);
+        border: 1px solid gray;
+        border-radius: .6rem;
+    }
+
+} */
+
+
+/* @media screen and (min-width: 1050px) and (min-height: 750px) {
+    .slaapkamer-deur {
+        height: 50%;
+        width: 15%;
+    }
+} */
+
+
+/* @media screen and (min-width: 1400px) and (min-height: 850px) {
+    .slaapkamer-deur {
+        height: 50%;
+        width: 15%;
+    }
+} */
+
+
+@media screen and (min-width: 1100px) {
+    .dampkap {
+        width: auto;
+        top: 22vh;
+        left: 40vw;
+        gap: 3rem;
+    }
+
+    .dampkap button {
+        margin-inline: .5rem;
+    }
+
+    .keuken-zoom-img-kast {
+        height: 39vh;
+    }
+
+    .keuken-img-micro {
+        left: 10vw;
+        height: 20vh;
+        top: 25vh;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .keuken-img-micro h2 {
+        font-size: 1rem;
+    }
+
+    .keuken-img-frigo {
+        width: 20vw;
+    }
+
+    .keuken-img-diepvries {
+        width: 20vw;
+    }
+
+    .slaapkamer-deur {
+        width: 16vw;
+        height: 51vh;
+    }
+
+    .inv {
+        height: 70%;
+        width: 80%;
+    }
+
+    .inv-top {
+        font-size: 1.5rem;
+    }
+
+    .list-inv {
+        margin-inline: 2rem;
+    }
+
+    .inv-item {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .groenten {
+        right: 5vw;
+        bottom: 18vh;
+    }
+
+    .groenten img {
+        max-width: 8rem;
+    }
+
+    .dialog h2 {
+        font-size: 2.5rem;
+    }
+
+    .dialog p {
+        font-size: 1.5rem;
+    }
+
+    .dialog button {
+        font-size: 1.5rem;
+    }
+
+    .messen {
+        bottom: 15%;
+    }
+
+    .messen button, .messen img {
+        max-width: 10rem;
+    }
+
+    .eten img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .eten {
+        bottom: 15%;
+    }
+
+    .vuur-aan {
+        bottom: 11%;
+        left: 32%;
+    }
+
+    .groeten-geschneden {
+        bottom: 30%;
+        left: 57%;
+        display: flex;
+    }
+
+    .groeten-geschneden button, .groeten-geschneden img {
+        max-width: 7rem;
+    }
+
+    .fornuis {
+        bottom: 28%;
+        left: 38%;
+    }
+
+    .fornuis button, .fornuis img {
+        max-width: 10rem;
+    }
+
+    .showeten {
+        top: 25%;
+        left: 40%;
+    }
+
+    .showeten img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+.leaderboard {
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+table {
+    width: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    background: var(--white);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th, td {
+    display: block;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+th {
+    font-weight: bold;
+}
