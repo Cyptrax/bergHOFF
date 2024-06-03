@@ -24,7 +24,7 @@ fig1.addEventListener("click", () => {
     count1 = false;
     dialog.showDialog(
       "Goede keuze",
-      "Dit is de goede keuze, dit is een fles van berghof. Dit is een herbruikbare fles die geen afval uitstoot"
+      "Dit is een uitstekende keuze: de Berghof fles. Deze herbruikbare fles is niet alleen milieuvriendelijk, maar ook duurzaam. Door te kiezen voor een Berghof fles draag je bij aan de vermindering van plastic afval, wat essentieel is voor het behoud van onze planeet."
     );
   }
 });
@@ -36,7 +36,7 @@ fig2.addEventListener("click", () => {
     count1 = false;
     dialog.showDialog(
       "Slechte keuze",
-      "Dit is de geen goede keuze, dit is geen item van berghof. Dit is een niet herbruikbare fles die veel afval uitstoot"
+      "Dit is niet de juiste keuze: dit is geen product van Berghof. Deze fles is niet herbruikbaar en draagt bij aan een aanzienlijke hoeveelheid afval. In plaats van bij te dragen aan een schonere planeet, verergert het probleem van milieuvervuiling."
     );
   }
 });
@@ -48,7 +48,7 @@ fig3.addEventListener("click", () => {
     count2 = false;
     dialog.showDialog(
       "Goede keuze",
-      "Dit is de goede keuze, dit is een lunchbox van berghof. Dit is een herbruikbare fles die geen afval uitstoot"
+      "Dit is de juiste keuze: een lunchbox van Berghof. Deze herbruikbare lunchbox is ontworpen met duurzaamheid in gedachten en helpt actief bij het verminderen van afval. Door te kiezen voor een herbruikbare lunchbox, draag je bij aan een schonere planeet door het gebruik van wegwerpmaterialen te vermijden."
     );
   }
 });
@@ -60,7 +60,7 @@ fig4.addEventListener("click", () => {
     count2 = false;
     dialog.showDialog(
       "Slechte keuze",
-      "Dit is de geen goede keuze, dit is geen item van berghof. Dit is een niet herbruikbare brooddoos die veel afval uitstoot"
+      "Dit is niet de juiste keuze: dit is geen product van Berghof. Deze brooddoos is niet herbruikbaar en draagt bij aan een aanzienlijke hoeveelheid afval. In plaats van bij te dragen aan een schonere planeet, verergert het probleem van milieuvervuiling."
     );
   }
 });

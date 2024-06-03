@@ -46,7 +46,7 @@ vuur.addEventListener("click", () => {
       kookplaat.showEten(closet.returnPan().name, etenshow);
       dialog.enDialog(
         "Slecht eten",
-        "Je hebt niet het perfect eten gekookt! je kunt verder gaan om je eindputen te zien en om het nog eens te proberen!"
+        "Oh nee, je hebt niet het perfecte gerecht bereid! Het lijkt erop dat je een vuile en slechte pan hebt gebruikt. Laten we doorgaan naar de eindpunten en het nog een keer proberen!"
       );
     }
   } else if (closet.returnPan().name == "mid-pan") {
@@ -57,7 +57,7 @@ vuur.addEventListener("click", () => {
       kookplaat.showEten(closet.returnPan().name, etenshow);
       dialog.enDialog(
         "Mild eten",
-        "Je hebt goed eten gekookt! je kunt verder gaan om je eindputen te zien!"
+        "Je hebt goed eten gekookt, maar het had nog beter gekund als je een pot van Berghof had gebruikt! Laten we doorgaan naar de eindpunten en ontdekken hoe we onze kookkunsten kunnen verbeteren met de hoogwaardige kookgerei van Berghof!"
       );
     }
   } else if (closet.returnPan().name == "goeie-pot") {
@@ -68,7 +68,7 @@ vuur.addEventListener("click", () => {
       kookplaat.showEten(closet.returnPan().name, etenshow);
       dialog.enDialog(
         "Perfect eten",
-        "Je hebt het perfect eten gekookt! je kunt verder gaan om je eindputen te zien"
+        "Fantastisch! Je hebt een heerlijke maaltijd bereid met behulp van de hoogwaardige Berghof kookgerei. Met Berghof kun je moeiteloos koken en genieten van geweldige resultaten in de keuken. Ga verder om je eindpunten te bekijken!"
       );
     }
   }

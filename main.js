@@ -37,7 +37,7 @@ slaapkamerdeur.addEventListener("click", () => {
   openItem(mainsection, keuken),
     dialog.showDialog(
       "Uitleg keuken",
-      "Op het bordje staan de gerechten die je nodig hebt, je kunt de gerechten uit de frigo halen, daarna moetje kiezen tussen 3 messen en de messen gebruiken (erop klikken) om de gronten te kunnen snijden."
+      "Op het bordje staan de gerechten die je nodig hebt. Laten we beginnen door de ingrediënten uit de koelkast te halen. Vervolgens moet je een keuze maken tussen drie messen die voor je liggen. Kies zorgvuldig, want elk mes heeft zijn eigen eigenschappen. Gebruik het mes door erop te klikken en begin met het snijden van de groenten. "
     );
 });
 slaapkamerterug.addEventListener("click", () => openItem(keuken, mainsection));
@@ -45,7 +45,9 @@ zoom.addEventListener("click", () => {
   openItem(keuken, keukenzoom),
     dialog.showDialog(
       "Uitleg Fornuis",
-      "Je moet uit de kast een juiste pan nemen, je moet de dampkap aanzetten en daarna kan je het vuur aansteken als je eerst alle andere stappen hebt gedaan."
+      "laten we eerst de juiste pan uit de kast halen. Zorg ervoor dat je de pan kiest die het beste past bij het gerecht dat we gaan bereiden. Vergeet niet om de dampkap aan te zetten om ervoor te zorgen dat we geen overmatige dampen in de keuken hebben." +
+        "\n" +
+        "Pas nadat je alle andere stappen hebt voltooid, kun je het vuur aansteken. Het is belangrijk om eerst alle voorbereidingen te treffen voordat we het kookproces beginnen. Laten we ervoor zorgen dat alles klaar staat voor een smakelijke en succesvolle kookervaring!"
     );
 });
 terugkeuken.addEventListener("click", () => openItem(keukenzoom, keuken));

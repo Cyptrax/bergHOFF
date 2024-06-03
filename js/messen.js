@@ -117,7 +117,7 @@ mes1.addEventListener("click", () => {
   if (display == 0) {
     dialog.showDialog(
       "Slechte keuze keuze",
-      "Dit is de slechte keuze, dit is een gebroken met en hiermee gaat het heel slecht om eten mee te snijden"
+      "Dit is een slechte keuze: dit mes is gebroken en daardoor ongeschikt om voedsel mee te snijden. Een gebroken mes is niet alleen inefficiënt, maar kan ook gevaarlijk zijn. Het gebrek aan een volledig en scherp lemmet maakt het snijden moeilijk en onnauwkeurig, wat het risico op ongelukken en verwondingen vergroot."
     );
     display = 1;
   }
@@ -142,7 +142,7 @@ mes2.addEventListener("click", () => {
   if (display == 0) {
     dialog.showDialog(
       "middelmatige keuze",
-      "Dit is de redelijke keuze, dit is een mes dat niet geschikt is voor groenten of vlees te snijden."
+      "Dit is een redelijke keuze: dit mes is echter niet geschikt voor het snijden van groenten of vlees. Hoewel het mes bruikbaar is voor bepaalde snijtaken, is het ontwerp of de scherpte mogelijk niet optimaal voor het verwerken van specifieke voedselsoorten zoals groenten en vlees."
     );
     display = 1;
   }
@@ -173,7 +173,7 @@ mes3.addEventListener("click", () => {
   if (display == 0) {
     dialog.showDialog(
       "Goede keuze",
-      "Dit is de goede keuze, dit is een mes van berghof. Dit is een goed scherp waardoor je veel gemakkelijker en sneller je eten kunt snijden"
+      "Dit is absoluut een goede keuze: een mes van Berghof staat bekend om zijn uitstekende scherpte en kwaliteit, waardoor je met gemak en snelheid door je voedsel kunt snijden. De scherpte van het mes maakt het snijden moeiteloos en nauwkeurig, waardoor je meer tijd kunt besteden aan het genieten van je maaltijd en minder tijd aan het voorbereiden ervan."
     );
     display = 1;
   }
