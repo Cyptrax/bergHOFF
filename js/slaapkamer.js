@@ -12,7 +12,7 @@ let count2 = true;
 setTimeout(() => {
   dialog.showDialog(
     "Game uitleg",
-    "Het spel geeft je verschillende keuzes en je gaat goede en eco vriendelijke keuzen moeten maken om een hoge score te halen. Als je op deze pagina alle keuzes hebt gemaakt kun ge doorgaan via de deur naar de volgende pagina"
+    "Het spel geeft je verschillende keuzes en je gaat goede en eco vriendelijke keuzen moeten maken om een hoge score te halen. Als je op deze pagina alle keuzes hebt gemaakt kan je doorgaan via de deur naar de volgende pagina"
   );
 }, "1500");
 

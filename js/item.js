@@ -200,7 +200,7 @@ const kip = new vlees(
   "kip",
   "./Images/kisspng-roast-chicken-food-roasting-clip-art-chicken-roast-5b48ff6f35ccd8.0481672615315106392204-removebg-preview.png"
 );
-const beacon = new vlees("beacon", "./Images/cartoon-pork.png");
+const varkensvlees = new vlees("varkensvlees", "./Images/cartoon-pork.png");
 //   const steak4 = new vlees(
 //     "steak",
 //     "./Images/plastic-water-bottle-empty-e170N24-600-removebg-preview.png"
@@ -232,9 +232,9 @@ const pan4 = new Item("mid-pan", "../Images/tefal_pan.png");
 const kookpot1 = new Item("goeie-pot", "./Images/kookpot_1.png");
 const kookpot2 = new Item("goeie-pot", "./Images/kookpot_2.png");
 
-let inventoryList1 = [steak, kip, beacon, sla, tomaat, komkommer, wortel];
+let inventoryList1 = [steak, kip, varkensvlees, sla, tomaat, komkommer, wortel];
 let inventoryList2 = [pan1, pan2, pan3, pan4, kookpot1, kookpot2];
-let vleeslist = [steak, kip, beacon];
+let vleeslist = [steak, kip, varkensvlees];
 let groetenlist = [sla, tomaat, komkommer, wortel];
 export const fridge = new Fridge(inventoryList1, groetenlist, vleeslist);
 export const closet = new Kast(inventoryList2);

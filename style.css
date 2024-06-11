@@ -958,6 +958,10 @@ body {
         max-width: 100%;
         max-height: 100%;
     }
+
+    .dialog {
+        height: 30%;
+    }
 }
 
 .hidden {
