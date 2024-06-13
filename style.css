@@ -13,9 +13,29 @@
     --blue-border: rgb(73, 139, 246);
 }
 
+.skiplink:focus {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+
+.skiplink {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+
+
 button:focus-visible, button:focus {
     /* box-shadow:#fff45f 1rem 1rem ; */
-    border: 2px solid red;
+    outline: 2px solid red;
 }
 
 button {
